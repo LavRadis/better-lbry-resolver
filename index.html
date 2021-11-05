@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Better LBRY Resolver</title>    
+    <link rel="stylesheet" href="css/doc.css">    
+    <!-- stuff related to json-viewer --> 
+    <script src="json-viewer/json-viewer.js" defer></script>    
+    <link rel="stylesheet" href="json-viewer/json-viewer.css">
+    <script src="res/jsoncreate.js" defer></script>      
+    <!--stuff related to resolving APIs and LBRYNET -->
+    <script src="resolvers/resolveody.js" defer></script>
+</head>
+<body>
+<input type="text" style="width: 33%" name="urlInput" id="urlInput" placeholder="Type URL or search query" >       
+</br>
+<!-- <textarea id="textraw2"style="width: 100%; min-height: 200px;"></textarea> -->
+
+<h3>Formatted Output</h3>
+    <!-- <button type="button" class="load-json">Load JSON</button> -->
+    <button type="button" class="collapse1">Collapse to level 1</button>
+    <button type="button" class="collapse2">Collapse to level 2</button>
+    <button type="button" class="collapse3">Collapse to level 3</button>
+    <button type="button" class="collapse4">Collapse to level 4</button>
+    <button type="button" class="collapse5">Collapse to level 5</button>
+    <button type="button" class="copyrawoutput" onclick="copyrawoutput()">Copy raw output</button>
+    <div id="json"></div>       
+<h3>Raw Output</h3>
+<button type="button" class="copyrawoutput" onclick="copyrawoutput()">Copy raw output</button>
+<div id="textraw"></div>
+    
+<script>           
+    var textraw= document.getElementById("textraw")
+    textraw.addEventListener('DOMSubtreeModified', createJSONFormatted);
+    function createJSONFormatted(e) {
+        try {
+        var value = textarea.innerHTML;
+        jsonObj = JSON.parse(value);
+    }
+    catch (err) {
+        console.log(err)
+       // alert(err);
+    }
+        jsonViewer.showJSON(jsonObj);
+    }
+    
+    function copyrawoutput() {
+        var range = document.createRange();
+                    range.selectNode(document.getElementById("textraw"));
+                    window.getSelection().removeAllRanges(); // clear current selection
+                    window.getSelection().addRange(range); // to select text
+                    document.execCommand("copy");
+                    window.getSelection().removeAllRanges();// to deselect
+    }
+</script>    
+</body>
+</html>

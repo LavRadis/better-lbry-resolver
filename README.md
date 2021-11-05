@@ -8,6 +8,8 @@ It curently uses Odysee API and simple resolve (https://lbry.tech/api/sdk#resolv
 Just unzip the file and run index.html
 
 # Tested on:
+Win 10
+
 Chrome 95.0.4638.69
 
 Firefox required additional plugin to enable CORS

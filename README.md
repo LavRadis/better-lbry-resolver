@@ -8,6 +8,7 @@ Just unzip the file and run index.html
 
 # Tested on:
 Chrome 95.0.4638.69
+
 Firefox required additional plugin to enable CORS
 
 # To Do:

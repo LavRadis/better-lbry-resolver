@@ -14,17 +14,18 @@ var setJSON = function() {
     }
 };		
 */
-var loadJsonBtn = document.querySelector("button.load-json");
+//var loadJsonBtn = document.querySelector("button.load-json");
 var collapse1Btn = document.querySelector("button.collapse1");
 var collapse2Btn = document.querySelector("button.collapse2");
 var collapse3Btn = document.querySelector("button.collapse3");
 var collapse4Btn = document.querySelector("button.collapse4");
 var collapse5Btn = document.querySelector("button.collapse5");        
-
+/*
 loadJsonBtn.addEventListener("click", function() {
     setJSON();
     jsonViewer.showJSON(jsonObj);
 });
+*/
 collapse1Btn.addEventListener("click", function() {
     jsonViewer.showJSON(jsonObj, null, 1);
 });

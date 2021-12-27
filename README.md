@@ -7,7 +7,7 @@ It curently uses Odysee API and simple resolve (https://lbry.tech/api/sdk#resolv
 # How to use it?
 Just unzip the file and run index.html
 
-To query via the local lbrynet daemon you will probably need to eddit the daemon_settings-yaml and add allowed_origin: "*" 
+To query via the local lbrynet daemon you will probably need to eddit the daemon_settings-yaml and add allowed_origin: "*"   
 Use this carefully since it could have unknown effects on security of your lbrynet.
 
 # Tested on:

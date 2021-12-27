@@ -25,8 +25,8 @@ window.onload=function(){
         "method": "POST",
         "mode": "cors"
     })
-    var urlResponseJSON = await urlResponse.json()      
-   try {document.getElementById("dlLink").innerHTML= ('</br><a href="'+ urlResponseJSON.result.streaming_url+'" target="_blank">This is the cliam download link from LBRY CDN</a>') } catch (error) {document.getElementById("dlLink").innerHTML= ('</br>This claim is a channel or paid content')}
+var urlResponseJSON = await urlResponse.json()      
+   try {document.getElementById("dlLink").innerHTML= ('</br><a href="'+ urlResponseJSON.result.streaming_url+'" target="_blank">This is the cliam download link from ODYSEE / LBRY CDN</a>') } catch (error) {document.getElementById("dlLink").innerHTML= ('</br>This claim is a channel or paid content')}
 
     
     var lookupResults = await fetch("https://api.na-backend.odysee.com/api/v1/proxy?m=resolve", {

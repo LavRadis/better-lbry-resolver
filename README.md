@@ -1,7 +1,6 @@
 # better-lbry-resolver
-This is a simple tool to easily resolve LBRY network claims to get the associated metadata. 
-I've built it for personal use while working on [Actarius](https://github.com/Shroom2020/actarius-lbry-browser).
-
+This is a simple tool to easily resolve LBRY network claims to get the associated metadata. It just runs in the browser as a simple local page and makes API calls. 
+I've built it for personal use while working on [Actarius](https://github.com/Shroom2020/actarius-lbry-browser).  
 It curently uses LBRY / Odysee API (https://lbry.tech/api/), you can visit that page and get additional infromation on the API calls.
 
 # How to use it?
@@ -16,11 +15,6 @@ Win 10
 Chrome 95.0.4638.69
 
 Firefox required additional plugin to enable CORS
-
-# To Do:
-- [x] Add local LBRYNET support
-- [ ] Add other API calls
-- [x] Make better UI
 
 # Licensing
 MIT license

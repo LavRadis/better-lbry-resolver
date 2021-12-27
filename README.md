@@ -2,7 +2,7 @@
 This is a simple tool to easily resolve LBRY network claims to get the associated metadata. 
 I've built it for personal use while working on [Actarius](https://github.com/Shroom2020/actarius-lbry-browser).
 
-It curently uses Odysee API and simple resolve (https://lbry.tech/api/sdk#resolve), but it will be expanded in the future.
+It curently uses LBRY / Odysee API (https://lbry.tech/api/), you can visit that page and get additional infromation on the API calls.
 
 # How to use it?
 Just unzip the file and run index.html
